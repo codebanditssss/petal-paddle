@@ -1,0 +1,3 @@
+# Codex CLI: `codex mcp add gmi --url https://mcp.gmicloud.ai/mcp && codex mcp login gmi`
+[mcp_servers.gmi]
+url = "https://mcp.gmicloud.ai/mcp"

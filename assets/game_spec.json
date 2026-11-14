@@ -1,0 +1,42 @@
+{
+  "title": "Petal Paddle",
+  "tagline": "Drift through golden ripples and gather floating blossoms.",
+  "how_to_play": "Steer your duckling around the pond to collect glowing lotus blossoms for points while steering clear of drifting spiky seed pods to protect your three lives.",
+  "palette": {
+    "water": "#7EC4C1",
+    "fog": "#FCD5B5",
+    "accent": "#FF8FA3"
+  },
+  "meshes": [
+    {
+      "id": "player",
+      "name": "Sunny Duckling",
+      "prompt": "Single cute plump pastel yellow duckling wearing a tiny green lilypad hat, charming low-poly 3D game character, clean geometric facets, soft pastel colors, floating posture, isolated single object, no base, no ground, white background"
+    },
+    {
+      "id": "collectible",
+      "name": "Lotus Blossom",
+      "prompt": "Single small stylized low-poly pink and cream lotus flower blossom, soft pastel petals with a warm glowing golden center, cute 3D game collectible object, clean geometric facets, isolated single object, no base, no ground"
+    },
+    {
+      "id": "obstacle",
+      "name": "Spiky Bur",
+      "prompt": "Single stylized low-poly prickly brown chestnut bur obstacle that drifts on water, chunky geometric spikes, muted warm wood and mossy tones, charming 3D game hazard prop, isolated single object, no base, no ground"
+    }
+  ],
+  "textures": [
+    {
+      "id": "ground",
+      "prompt": "Seamless tileable top-down texture for a calm pond water surface, stylized hand-painted pastel turquoise water with soft golden peach sunlight caustics and gentle ripples, cozy low-poly game aesthetic, no objects, no text"
+    },
+    {
+      "id": "sky",
+      "prompt": "Wide panoramic painted sky backdrop at golden hour, soft pastel peach, lavender, and warm amber gradients with fluffy stylized clouds and distant serene low-poly hills, cozy storybook aesthetic, no text"
+    }
+  ],
+  "music": {
+    "style": "Cozy acoustic indie folk and lofi, peaceful warm mood, gentle kalimba, fingerpicked acoustic guitar, soft felt piano, subtle wind chimes, relaxed 76 BPM",
+    "lyrics": "[Intro]\nMmm, golden ripples...\n[Verse]\nAmber light upon the blue,\nGentle currents carry you.\nFloating petals, soft and bright,\nGlowing in the evening light.\n[Chorus]\nPaddle slow and take your time,\nWhere the quiet waters shine.\nPocket pond of pastel gold,\nPeaceful stories to unfold.\n[Outro]\nSun dips low, the breeze is still,\nSweetest dreams upon the hill."
+  },
+  "voice_line": "Welcome to the pond, little friend. Take a deep breath and enjoy the golden hour."
+}

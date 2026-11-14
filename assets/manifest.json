@@ -1,0 +1,541 @@
+{
+  "project": "self-supplying-agent",
+  "generated_at": "2026-11-14T12:25:31.950Z",
+  "total_wall_seconds": 6.4,
+  "game": {
+    "title": "Petal Paddle",
+    "tagline": "Drift through golden ripples and gather floating blossoms.",
+    "how_to_play": "Steer your duckling around the pond to collect glowing lotus blossoms for points while steering clear of drifting spiky seed pods to protect your three lives.",
+    "palette": {
+      "water": "#7EC4C1",
+      "fog": "#FCD5B5",
+      "accent": "#FF8FA3"
+    }
+  },
+  "steps": [
+    {
+      "kind": "design",
+      "model": "google/gemini-4-carbon",
+      "endpoint": "chat/completions",
+      "started_at": "2026-11-14T11:55:55.377Z",
+      "seconds": 70.6,
+      "usage": {
+        "prompt_tokens": 496,
+        "completion_tokens": 1553,
+        "total_tokens": 2049,
+        "billing_usage": {
+          "source": "gemini_chat",
+          "semantic": "gemini",
+          "gemini_usage_metadata": {
+            "promptTokenCount": 496,
+            "toolUsePromptTokenCount": 0,
+            "candidatesTokenCount": 662,
+            "totalTokenCount": 2049,
+            "thoughtsTokenCount": 891,
+            "cachedContentTokenCount": 0,
+            "promptTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 496
+              }
+            ],
+            "toolUsePromptTokensDetails": [],
+            "candidatesTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 662
+              }
+            ]
+          }
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 496,
+          "audio_tokens": 0,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "text_tokens": 662,
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 891
+        },
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "input_tokens_details": null,
+        "claude_cache_creation_5_m_tokens": 0,
+        "claude_cache_creation_1_h_tokens": 0
+      },
+      "list_usd": 0.03304,
+      "discount": 0.5,
+      "cost_usd": 0.01652,
+      "cost_source": "GMI /v1/models pricing x token usage"
+    },
+    {
+      "kind": "mesh",
+      "id": "player",
+      "model": "hunyuan-3d-pro",
+      "payload": {
+        "prompt": "Single cute plump pastel yellow duckling wearing a tiny green lilypad hat, charming low-poly 3D game character, clean geometric facets, soft pastel colors, floating posture, isolated single object, no base, no ground, white background. Cute stylized low-poly game asset, soft pastel colors, single object, centered.",
+        "generate_type": "Normal",
+        "face_count": 40000
+      },
+      "submitted_at": "2026-11-14T12:25:28.017Z",
+      "attempts": {
+        "n": 1,
+        "errors": [
+          "submit hunyuan-3d-pro HTTP 500: {\"error\":\"hunyuan api error [ResourceInsufficient]: Resources are insufficient.\"}"
+        ]
+      },
+      "status": "failed",
+      "error": "submit hunyuan-3d-pro HTTP 500: {\"error\":\"hunyuan api error [ResourceInsufficient]: Resources are insufficient.\"}",
+      "seconds": 2
+    },
+    {
+      "kind": "mesh",
+      "id": "collectible",
+      "model": "hunyuan-3d-pro",
+      "payload": {
+        "prompt": "Single small stylized low-poly pink and cream lotus flower blossom, soft pastel petals with a warm glowing golden center, cute 3D game collectible object, clean geometric facets, isolated single object, no base, no ground. Cute stylized low-poly game asset, soft pastel colors, single object, centered.",
+        "generate_type": "Normal",
+        "face_count": 40000
+      },
+      "submitted_at": "2026-11-14T12:25:28.019Z",
+      "attempts": {
+        "n": 1,
+        "errors": [
+          "submit hunyuan-3d-pro HTTP 500: {\"error\":\"hunyuan api error [ResourceInsufficient]: Resources are insufficient.\"}"
+        ]
+      },
+      "status": "failed",
+      "error": "submit hunyuan-3d-pro HTTP 500: {\"error\":\"hunyuan api error [ResourceInsufficient]: Resources are insufficient.\"}",
+      "seconds": 2.9
+    },
+    {
+      "kind": "mesh",
+      "id": "obstacle",
+      "model": "hunyuan-3d-pro",
+      "payload": {
+        "prompt": "Single stylized low-poly prickly brown chestnut bur obstacle that drifts on water, chunky geometric spikes, muted warm wood and mossy tones, charming 3D game hazard prop, isolated single object, no base, no ground. Cute stylized low-poly game asset, soft pastel colors, single object, centered.",
+        "generate_type": "Normal",
+        "face_count": 40000
+      },
+      "submitted_at": "2026-11-14T12:25:28.019Z",
+      "attempts": {
+        "n": 1,
+        "errors": [
+          "submit hunyuan-3d-pro HTTP 500: {\"error\":\"hunyuan api error [ResourceInsufficient]: Resources are insufficient.\"}"
+        ]
+      },
+      "status": "failed",
+      "error": "submit hunyuan-3d-pro HTTP 500: {\"error\":\"hunyuan api error [ResourceInsufficient]: Resources are insufficient.\"}",
+      "seconds": 3.9
+    },
+    {
+      "kind": "texture",
+      "id": "ground",
+      "model": "seedream-5.0-lite",
+      "payload": {
+        "prompt": "Seamless tileable top-down texture for a calm pond water surface, stylized hand-painted pastel turquoise water with soft golden peach sunlight caustics and gentle ripples, cozy low-poly game aesthetic, no objects, no text",
+        "size": "2048x2048",
+        "output_format": "png",
+        "watermark": false
+      },
+      "submitted_at": "2026-11-14T11:57:05.966Z",
+      "request_id": "31446d27-3654-4cca-b725-b59c5dead054",
+      "completed_at": "2026-11-14T11:57:33.863Z",
+      "seconds": 27.9,
+      "server_seconds": 27,
+      "files": [
+        {
+          "file": "assets/ground.png",
+          "bytes": 5734526
+        }
+      ],
+      "cost_usd": 0.035,
+      "cost_source": "GMI request-queue price list (price_info)",
+      "status": "success"
+    },
+    {
+      "kind": "texture",
+      "id": "sky",
+      "model": "seedream-5.0-lite",
+      "payload": {
+        "prompt": "Wide panoramic painted sky backdrop at golden hour, soft pastel peach, lavender, and warm amber gradients with fluffy stylized clouds and distant serene low-poly hills, cozy storybook aesthetic, no text",
+        "size": "3072x1536",
+        "output_format": "png",
+        "watermark": false
+      },
+      "submitted_at": "2026-11-14T11:57:05.967Z",
+      "request_id": "a70e6d55-f8dc-432f-b42c-86e945708b4a",
+      "completed_at": "2026-11-14T11:57:31.690Z",
+      "seconds": 25.7,
+      "server_seconds": 25,
+      "files": [
+        {
+          "file": "assets/sky.png",
+          "bytes": 4421202
+        }
+      ],
+      "cost_usd": 0.035,
+      "cost_source": "GMI request-queue price list (price_info)",
+      "status": "success"
+    },
+    {
+      "kind": "music",
+      "id": "music",
+      "model": "minimax-music-3.0",
+      "payload": {
+        "lyrics": "[Inst]\n\n[Inst]\n\n[Interlude]\n\n[Inst]\n\n[Solo]\n\n[Inst]",
+        "prompt": "Lo-fi cozy game loop, 88 BPM, soft kalimba lead melody, warm Rhodes chords, mellow brushed drums and soft kick, round upright bass, light vinyl crackle, sunny pond afternoon. Pure music, instrumental only, no vocals, no singing, no humming, no voice. Seamless loopable background music for a cozy video game, calm Animal Crossing and Stardew Valley vibes, warm and catchy, gentle melody that repeats, soft dynamics, no big build-ups, no abrupt ending.",
+        "format": "mp3",
+        "lyrics_optimizer": false
+      },
+      "request_id": "b8a1e89f-9b85-466b-b689-dffc3f7d0a4c",
+      "submitted_at": "2026-11-14T12:33:32.641Z",
+      "completed_at": "2026-11-14T12:34:57.860Z",
+      "seconds": 85.2,
+      "server_seconds": 84,
+      "cost_usd": 0.15,
+      "cost_source": "GMI request-queue price list (price_info)",
+      "status": "success",
+      "files": [
+        {
+          "file": "assets/music.mp3"
+        },
+        {
+          "file": "assets/alt_music/v4_kalimba_lofi.mp3",
+          "bytes": 3511160
+        }
+      ],
+      "listen_check": "no vocals, no clipping (peak -0.3 dB), only tail silence \u2192 CHOSEN",
+      "post_processing": "trimmed to 104s (drops 2.6s silent tail) + 2.5s fade-out with ffmpeg, from assets/alt_music/v4_kalimba_lofi.mp3"
+    },
+    {
+      "kind": "voice",
+      "id": "voice",
+      "model": "minimax-tts-speech-2.8-turbo",
+      "payload": {
+        "text": "Welcome to the pond, little friend. Take a deep breath and enjoy the golden hour.",
+        "voice_id": "English_radiant_girl",
+        "format": "mp3"
+      },
+      "submitted_at": "2026-11-14T11:58:44.046Z",
+      "attempts": {
+        "n": 1,
+        "errors": []
+      },
+      "request_id": "7590fe97-4778-4940-ba91-b3bf87390e19",
+      "completed_at": "2026-11-14T11:59:00.621Z",
+      "seconds": 16.6,
+      "server_seconds": 13,
+      "files": [
+        {
+          "file": "assets/voice.mp3",
+          "bytes": 80052
+        }
+      ],
+      "cost_usd": 0.0049,
+      "cost_source": "GMI request-queue price list (price_info)",
+      "status": "success"
+    },
+    {
+      "kind": "sprite",
+      "id": "player_sprite",
+      "model": "gpt-image-2.5-flare-generate",
+      "payload": {
+        "prompt": "Single cute plump pastel yellow duckling wearing a tiny green lilypad hat, charming low-poly 3D game character, clean geometric facets, soft pastel colors, floating posture, isolated single object, no base, no ground, white background. Cute storybook game sprite, three-quarter view, soft pastel cel shading, full object visible, transparent background.",
+        "size": "1024x1024",
+        "quality": "medium",
+        "background": "transparent",
+        "output_format": "png",
+        "moderation": "low"
+      },
+      "submitted_at": "2026-11-14T11:58:44.047Z",
+      "attempts": {
+        "n": 2,
+        "errors": [
+          "submit gpt-image-2.5-flare-generate HTTP 500: {\"error\":\"The server had an error while processing your request.\",\"request_id\":\"59877b90-8e62-45a2-9337-114305e1b340\"}"
+        ]
+      },
+      "request_id": "2105d0dd-522b-461b-985a-ccb68df2d7d6",
+      "completed_at": "2026-11-14T11:59:42.054Z",
+      "seconds": 58,
+      "server_seconds": 11,
+      "files": [
+        {
+          "file": "assets/player_sprite.png",
+          "bytes": 1121975
+        }
+      ],
+      "cost_usd": 0.0132,
+      "cost_source": "GMI request-queue price list (price_info)",
+      "status": "success"
+    },
+    {
+      "kind": "sprite",
+      "id": "collectible_sprite",
+      "model": "gpt-image-2.5-flare-generate",
+      "payload": {
+        "prompt": "Single small stylized low-poly pink and cream lotus flower blossom, soft pastel petals with a warm glowing golden center, cute 3D game collectible object, clean geometric facets, isolated single object, no base, no ground. Cute storybook game sprite, three-quarter view, soft pastel cel shading, full object visible, transparent background.",
+        "size": "1024x1024",
+        "quality": "medium",
+        "background": "transparent",
+        "output_format": "png",
+        "moderation": "low"
+      },
+      "submitted_at": "2026-11-14T11:58:44.047Z",
+      "attempts": {
+        "n": 2,
+        "errors": [
+          "submit gpt-image-2.5-flare-generate HTTP 500: {\"error\":\"The server had an error while processing your request.\",\"request_id\":\"385875b3-3098-4594-8bc0-ff7364d57bb9\"}"
+        ]
+      },
+      "request_id": "b9d6d2b5-06b7-407a-ac71-4f2eb0d1e4f4",
+      "completed_at": "2026-11-14T11:59:42.813Z",
+      "seconds": 58.8,
+      "server_seconds": 11,
+      "files": [
+        {
+          "file": "assets/collectible_sprite.png",
+          "bytes": 1079831
+        }
+      ],
+      "cost_usd": 0.0132,
+      "cost_source": "GMI request-queue price list (price_info)",
+      "status": "success"
+    },
+    {
+      "kind": "sprite",
+      "id": "obstacle_sprite",
+      "model": "gpt-image-2.5-flare-generate",
+      "payload": {
+        "prompt": "Single stylized low-poly prickly brown chestnut bur obstacle that drifts on water, chunky geometric spikes, muted warm wood and mossy tones, charming 3D game hazard prop, isolated single object, no base, no ground. Cute storybook game sprite, three-quarter view, soft pastel cel shading, full object visible, transparent background.",
+        "size": "1024x1024",
+        "quality": "medium",
+        "background": "transparent",
+        "output_format": "png",
+        "moderation": "low"
+      },
+      "submitted_at": "2026-11-14T11:58:44.047Z",
+      "attempts": {
+        "n": 1,
+        "errors": []
+      },
+      "request_id": "aa79caac-55f6-4186-af9f-b4e01d75ad11",
+      "completed_at": "2026-11-14T11:59:00.456Z",
+      "seconds": 16.4,
+      "server_seconds": 16,
+      "files": [
+        {
+          "file": "assets/obstacle_sprite.png",
+          "bytes": 1408546
+        }
+      ],
+      "cost_usd": 0.0132,
+      "cost_source": "GMI request-queue price list (price_info)",
+      "status": "success"
+    }
+  ],
+  "totals": {
+    "media_cost_usd": 0.2645,
+    "llm_cost_usd": 0.01652,
+    "total_cost_usd": 0.281,
+    "generation_seconds_sum": 164,
+    "files": [
+      "assets/ground.png",
+      "assets/sky.png",
+      "assets/music.mp3",
+      "assets/voice.mp3",
+      "assets/player_sprite.png",
+      "assets/collectible_sprite.png",
+      "assets/obstacle_sprite.png"
+    ],
+    "llm_tokens": 2049,
+    "succeeded": 7,
+    "failed": 3,
+    "music_iteration_cost_usd": 0.9,
+    "all_in_spend_usd": 1.27,
+    "music_listen_check": "gemini-4-carbon audio input: 6 calls, 17392 prompt + 5424 completion tokens = $0.089 (50% off) + ffmpeg silencedetect/astats"
+  },
+  "music_variants": [
+    {
+      "kind": "music_variant",
+      "id": "music_v0_original",
+      "model": "minimax-music-3.0",
+      "payload": {
+        "lyrics": "[Intro]\nMmm, golden ripples...\n[Verse]\nAmber light upon the blue,\nGentle currents carry you.\nFloating petals, soft and bright,\nGlowing in the evening light.\n[Chorus]\nPaddle slow and take your time,\nWhere the quiet waters shine.\nPocket pond of pastel gold,\nPeaceful stories to unfold.\n[Outro]\nSun dips low, the breeze is still,\nSweetest dreams upon the hill.",
+        "prompt": "Cozy acoustic indie folk and lofi, peaceful warm mood, gentle kalimba, fingerpicked acoustic guitar, soft felt piano, subtle wind chimes, relaxed 76 BPM",
+        "format": "mp3"
+      },
+      "submitted_at": "2026-11-14T11:57:05.967Z",
+      "request_id": "2774846d-0d3b-42bc-a918-338784300747",
+      "completed_at": "2026-11-14T11:58:07.391Z",
+      "seconds": 61.4,
+      "server_seconds": 61,
+      "files": [
+        {
+          "file": "assets/music.mp3",
+          "bytes": 2217994
+        }
+      ],
+      "cost_usd": 0.15,
+      "cost_source": "GMI request-queue price list (price_info)",
+      "status": "success",
+      "listen_check": "original song with vocals, replaced after feedback"
+    },
+    {
+      "kind": "music_variant",
+      "id": "v1_kalimba_lofi",
+      "model": "minimax-music-3.0",
+      "payload": {
+        "lyrics": "[Intro]\n[Instrumental]\n[Verse]\n[Instrumental]\n[Chorus]\n[Instrumental]\n[Verse]\n[Instrumental]\n[Outro]\n[Instrumental]",
+        "prompt": "Lo-fi cozy game loop, 88 BPM, soft kalimba lead melody, warm Rhodes chords, mellow brushed drums and soft kick, round upright bass, light vinyl crackle, sunny pond afternoon. Instrumental only, no vocals, no singing, no humming, no voice. Seamless loopable background music for a cozy video game, calm Animal Crossing and Stardew Valley vibes, warm and catchy, gentle melody that repeats, soft dynamics, no big build-ups, no abrupt ending.",
+        "format": "mp3"
+      },
+      "request_id": "d29f9142-89d9-45fe-b2ec-62ade66a870a",
+      "submitted_at": "2026-11-14T12:30:08.459Z",
+      "completed_at": "2026-11-14T12:31:10.824Z",
+      "seconds": 62.4,
+      "server_seconds": 62,
+      "cost_usd": 0.15,
+      "cost_source": "GMI request-queue price list (price_info)",
+      "status": "success",
+      "files": [
+        {
+          "file": "assets/alt_music/round1_vocals/v1_kalimba_lofi.mp3",
+          "bytes": 2467934
+        }
+      ],
+      "listen_check": "vocals (wordless female humming)"
+    },
+    {
+      "kind": "music_variant",
+      "id": "v2_plucked_guitar",
+      "model": "minimax-music-3.0",
+      "payload": {
+        "lyrics": "[Intro]\n[Instrumental]\n[Verse]\n[Instrumental]\n[Chorus]\n[Instrumental]\n[Verse]\n[Instrumental]\n[Outro]\n[Instrumental]",
+        "prompt": "Cozy indie folk game theme, 92 BPM, fingerpicked nylon guitar melody, plucked ukulele, soft glockenspiel accents, gentle shaker and rim clicks, warm bass, cheerful and relaxed. Instrumental only, no vocals, no singing, no humming, no voice. Seamless loopable background music for a cozy video game, calm Animal Crossing and Stardew Valley vibes, warm and catchy, gentle melody that repeats, soft dynamics, no big build-ups, no abrupt ending.",
+        "format": "mp3"
+      },
+      "request_id": "e1402b79-23a8-42a5-a317-fd60780e29ea",
+      "submitted_at": "2026-11-14T12:30:08.485Z",
+      "completed_at": "2026-11-14T12:31:30.851Z",
+      "seconds": 82.4,
+      "server_seconds": 82,
+      "cost_usd": 0.15,
+      "cost_source": "GMI request-queue price list (price_info)",
+      "status": "success",
+      "files": [
+        {
+          "file": "assets/alt_music/round1_vocals/v2_plucked_guitar.mp3",
+          "bytes": 3466020
+        }
+      ],
+      "listen_check": "vocals (gibberish lyrics)"
+    },
+    {
+      "kind": "music_variant",
+      "id": "v3_marimba_bossa",
+      "model": "minimax-music-3.0",
+      "payload": {
+        "lyrics": "[Intro]\n[Instrumental]\n[Verse]\n[Instrumental]\n[Chorus]\n[Instrumental]\n[Verse]\n[Instrumental]\n[Outro]\n[Instrumental]",
+        "prompt": "Playful cozy game loop, 90 BPM, marimba and kalimba melody, soft bossa nova groove with brushes, mellow electric piano, light flute counter-melody, warm and bouncy, golden hour by the water. Instrumental only, no vocals, no singing, no humming, no voice. Seamless loopable background music for a cozy video game, calm Animal Crossing and Stardew Valley vibes, warm and catchy, gentle melody that repeats, soft dynamics, no big build-ups, no abrupt ending.",
+        "format": "mp3"
+      },
+      "request_id": "2a663a26-1b12-4aae-aa99-03f4348bc997",
+      "submitted_at": "2026-11-14T12:30:08.485Z",
+      "completed_at": "2026-11-14T12:31:32.142Z",
+      "seconds": 83.7,
+      "server_seconds": 83,
+      "cost_usd": 0.15,
+      "cost_source": "GMI request-queue price list (price_info)",
+      "status": "success",
+      "files": [
+        {
+          "file": "assets/alt_music/round1_vocals/v3_marimba_bossa.mp3",
+          "bytes": 3382428
+        }
+      ],
+      "listen_check": "vocals + clipping (flat factor >1)"
+    },
+    {
+      "kind": "music_variant",
+      "id": "v4_kalimba_lofi",
+      "model": "minimax-music-3.0",
+      "payload": {
+        "lyrics": "[Inst]\n\n[Inst]\n\n[Interlude]\n\n[Inst]\n\n[Solo]\n\n[Inst]",
+        "prompt": "Lo-fi cozy game loop, 88 BPM, soft kalimba lead melody, warm Rhodes chords, mellow brushed drums and soft kick, round upright bass, light vinyl crackle, sunny pond afternoon. Pure music, instrumental only, no vocals, no singing, no humming, no voice. Seamless loopable background music for a cozy video game, calm Animal Crossing and Stardew Valley vibes, warm and catchy, gentle melody that repeats, soft dynamics, no big build-ups, no abrupt ending.",
+        "format": "mp3",
+        "lyrics_optimizer": false
+      },
+      "request_id": "b8a1e89f-9b85-466b-b689-dffc3f7d0a4c",
+      "submitted_at": "2026-11-14T12:33:32.641Z",
+      "completed_at": "2026-11-14T12:34:57.860Z",
+      "seconds": 85.2,
+      "server_seconds": 84,
+      "cost_usd": 0.15,
+      "cost_source": "GMI request-queue price list (price_info)",
+      "status": "success",
+      "files": [
+        {
+          "file": "assets/alt_music/v4_kalimba_lofi.mp3",
+          "bytes": 3511160
+        }
+      ],
+      "listen_check": "no vocals, no clipping (peak -0.3 dB), only tail silence \u2192 CHOSEN"
+    },
+    {
+      "kind": "music_variant",
+      "id": "v5_plucked_guitar",
+      "model": "minimax-music-3.0",
+      "payload": {
+        "lyrics": "[Inst]\n\n[Inst]\n\n[Interlude]\n\n[Inst]\n\n[Solo]\n\n[Inst]",
+        "prompt": "Cozy indie folk game theme, 92 BPM, fingerpicked nylon guitar melody, plucked ukulele, soft glockenspiel accents, gentle shaker and rim clicks, warm bass, cheerful and relaxed. Pure music, instrumental only, no vocals, no singing, no humming, no voice. Seamless loopable background music for a cozy video game, calm Animal Crossing and Stardew Valley vibes, warm and catchy, gentle melody that repeats, soft dynamics, no big build-ups, no abrupt ending.",
+        "format": "mp3",
+        "lyrics_optimizer": false
+      },
+      "request_id": "4a652f03-7b8b-4942-b726-d7eaba8a034d",
+      "submitted_at": "2026-11-14T12:33:32.668Z",
+      "completed_at": "2026-11-14T12:34:46.082Z",
+      "seconds": 73.4,
+      "server_seconds": 72,
+      "cost_usd": 0.15,
+      "cost_source": "GMI request-queue price list (price_info)",
+      "status": "success",
+      "files": [
+        {
+          "file": "assets/alt_music/v5_plucked_guitar.mp3",
+          "bytes": 2793942
+        }
+      ],
+      "listen_check": "vocals at start"
+    },
+    {
+      "kind": "music_variant",
+      "id": "v6_marimba_bossa",
+      "model": "minimax-music-3.0",
+      "payload": {
+        "lyrics": "[Inst]\n\n[Inst]\n\n[Interlude]\n\n[Inst]\n\n[Solo]\n\n[Inst]",
+        "prompt": "Playful cozy game loop, 90 BPM, marimba and kalimba melody, soft bossa nova groove with brushes, mellow electric piano, light flute counter-melody, warm and bouncy, golden hour by the water. Pure music, instrumental only, no vocals, no singing, no humming, no voice. Seamless loopable background music for a cozy video game, calm Animal Crossing and Stardew Valley vibes, warm and catchy, gentle melody that repeats, soft dynamics, no big build-ups, no abrupt ending.",
+        "format": "mp3",
+        "lyrics_optimizer": false
+      },
+      "request_id": "0448df2b-8df5-42b6-ba6a-9071abaa0ebc",
+      "submitted_at": "2026-11-14T12:33:32.669Z",
+      "completed_at": "2026-11-14T12:35:19.251Z",
+      "seconds": 106.6,
+      "server_seconds": 105,
+      "cost_usd": 0.15,
+      "cost_source": "GMI request-queue price list (price_info)",
+      "status": "success",
+      "files": [
+        {
+          "file": "assets/alt_music/v6_marimba_bossa.mp3",
+          "bytes": 4560237
+        }
+      ],
+      "listen_check": "vocals + heavy clipping (flat factor ~10)"
+    }
+  ]
+}
