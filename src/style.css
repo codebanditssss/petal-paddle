@@ -1,0 +1,13 @@
+html,body{margin:0;height:100%;overflow:hidden;background:#1b2433;font-family:ui-rounded,"SF Pro Rounded","Nunito",system-ui,sans-serif;color:#fff}
+#c{display:block;width:100vw;height:100vh}
+#hud{position:fixed;top:14px;left:18px;right:18px;display:flex;justify-content:space-between;pointer-events:none;text-shadow:0 2px 6px #0006}
+#title{font-size:22px;font-weight:800;letter-spacing:.5px}
+#stats{display:flex;gap:18px;font-size:22px;font-weight:800}
+#score::before{content:"✦ "}
+#overlay{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(#0000,#0008);text-align:center;gap:6px;transition:opacity .4s}
+#overlay.hidden{opacity:0;pointer-events:none}
+#overlay h1{font-size:56px;margin:0;text-shadow:0 4px 20px #0008}
+#overlay p{margin:2px;font-size:18px;max-width:560px;text-shadow:0 2px 6px #000a}
+#overlay .small{font-size:13px;opacity:.85;margin-top:14px}
+#start{margin-top:16px;font:inherit;font-size:20px;font-weight:800;padding:12px 34px;border:0;border-radius:999px;background:#ffd38a;color:#4a3216;cursor:pointer;box-shadow:0 6px 0 #c9934a}
+#start:disabled{opacity:.6;cursor:wait}
