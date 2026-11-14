@@ -1,0 +1,74 @@
+[
+  {
+    "kind": "music_variant",
+    "id": "v1_kalimba_lofi",
+    "model": "minimax-music-3.0",
+    "payload": {
+      "lyrics": "[Intro]\n[Instrumental]\n[Verse]\n[Instrumental]\n[Chorus]\n[Instrumental]\n[Verse]\n[Instrumental]\n[Outro]\n[Instrumental]",
+      "prompt": "Lo-fi cozy game loop, 88 BPM, soft kalimba lead melody, warm Rhodes chords, mellow brushed drums and soft kick, round upright bass, light vinyl crackle, sunny pond afternoon. Instrumental only, no vocals, no singing, no humming, no voice. Seamless loopable background music for a cozy video game, calm Animal Crossing and Stardew Valley vibes, warm and catchy, gentle melody that repeats, soft dynamics, no big build-ups, no abrupt ending.",
+      "format": "mp3"
+    },
+    "request_id": "d29f9142-89d9-45fe-b2ec-62ade66a870a",
+    "submitted_at": "2026-11-14T12:30:08.459Z",
+    "completed_at": "2026-11-14T12:31:10.824Z",
+    "seconds": 62.4,
+    "server_seconds": 62,
+    "cost_usd": 0.15,
+    "cost_source": "GMI request-queue price list (price_info)",
+    "status": "success",
+    "files": [
+      {
+        "file": "assets/alt_music/v1_kalimba_lofi.mp3",
+        "bytes": 2467934
+      }
+    ]
+  },
+  {
+    "kind": "music_variant",
+    "id": "v2_plucked_guitar",
+    "model": "minimax-music-3.0",
+    "payload": {
+      "lyrics": "[Intro]\n[Instrumental]\n[Verse]\n[Instrumental]\n[Chorus]\n[Instrumental]\n[Verse]\n[Instrumental]\n[Outro]\n[Instrumental]",
+      "prompt": "Cozy indie folk game theme, 92 BPM, fingerpicked nylon guitar melody, plucked ukulele, soft glockenspiel accents, gentle shaker and rim clicks, warm bass, cheerful and relaxed. Instrumental only, no vocals, no singing, no humming, no voice. Seamless loopable background music for a cozy video game, calm Animal Crossing and Stardew Valley vibes, warm and catchy, gentle melody that repeats, soft dynamics, no big build-ups, no abrupt ending.",
+      "format": "mp3"
+    },
+    "request_id": "e1402b79-23a8-42a5-a317-fd60780e29ea",
+    "submitted_at": "2026-11-14T12:30:08.485Z",
+    "completed_at": "2026-11-14T12:31:30.851Z",
+    "seconds": 82.4,
+    "server_seconds": 82,
+    "cost_usd": 0.15,
+    "cost_source": "GMI request-queue price list (price_info)",
+    "status": "success",
+    "files": [
+      {
+        "file": "assets/alt_music/v2_plucked_guitar.mp3",
+        "bytes": 3466020
+      }
+    ]
+  },
+  {
+    "kind": "music_variant",
+    "id": "v3_marimba_bossa",
+    "model": "minimax-music-3.0",
+    "payload": {
+      "lyrics": "[Intro]\n[Instrumental]\n[Verse]\n[Instrumental]\n[Chorus]\n[Instrumental]\n[Verse]\n[Instrumental]\n[Outro]\n[Instrumental]",
+      "prompt": "Playful cozy game loop, 90 BPM, marimba and kalimba melody, soft bossa nova groove with brushes, mellow electric piano, light flute counter-melody, warm and bouncy, golden hour by the water. Instrumental only, no vocals, no singing, no humming, no voice. Seamless loopable background music for a cozy video game, calm Animal Crossing and Stardew Valley vibes, warm and catchy, gentle melody that repeats, soft dynamics, no big build-ups, no abrupt ending.",
+      "format": "mp3"
+    },
+    "request_id": "2a663a26-1b12-4aae-aa99-03f4348bc997",
+    "submitted_at": "2026-11-14T12:30:08.485Z",
+    "completed_at": "2026-11-14T12:31:32.142Z",
+    "seconds": 83.7,
+    "server_seconds": 83,
+    "cost_usd": 0.15,
+    "cost_source": "GMI request-queue price list (price_info)",
+    "status": "success",
+    "files": [
+      {
+        "file": "assets/alt_music/v3_marimba_bossa.mp3",
+        "bytes": 3382428
+      }
+    ]
+  }
+]
