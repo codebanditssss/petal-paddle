@@ -1,0 +1,25 @@
+{
+  "manual": {
+    "state": "play",
+    "score": 2,
+    "kinds": {
+      "player": "sprite",
+      "collectible": "sprite",
+      "obstacle": "sprite"
+    },
+    "musicPlaying": true,
+    "musicTime": 6.740187
+  },
+  "demo": {
+    "state": "play",
+    "score": 17
+  },
+  "demo_video": "shots/demo.mp4 (gameplay only, trimmed from the headless recording, assets/music.mp3 muxed in)",
+  "play_offset_s": 0.978,
+  "logs": [
+    "[warning] [assets] player: no 3D mesh (no mesh generated); using GMI sprite",
+    "[warning] [assets] collectible: no 3D mesh (no mesh generated); using GMI sprite",
+    "[warning] [assets] obstacle: no 3D mesh (no mesh generated); using GMI sprite",
+    "[log] [assets] kinds {\"player\":\"sprite\",\"collectible\":\"sprite\",\"obstacle\":\"sprite\"}"
+  ]
+}
