@@ -21,9 +21,9 @@ const camera = new THREE.PerspectiveCamera(50, innerWidth / innerHeight, 0.1, 50
 addEventListener('resize', () => { camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix(); renderer.setSize(innerWidth, innerHeight); });
 
 // ---------- load manifest + assets ----------
-const manifest = await (await fetch('/manifest.json')).json();
+const manifest = await (await fetch(import.meta.env.BASE_URL + 'manifest.json')).json();
 const fileFor = (id) => manifest.steps.find((s) => s.id === id && s.status === 'success');
-const urlOf = (p) => '/' + p.replace(/^assets\//, '');
+const urlOf = (p) => import.meta.env.BASE_URL + p.replace(/^assets\//, '');
 
 export const usedKinds = {};
 async function loadEntity(id) {
