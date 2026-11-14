@@ -1,5 +1,8 @@
 # Self-Supplying Agent: a coding agent that makes its own game assets on GMI Cloud
 
+**[play it in your browser](https://codebanditssss.github.io/petal-paddle/)**
+
+
 **Petal Paddle** is a small, cozy three.js pond game. You steer a duckling, collect lotus blossoms and dodge drifting spiky burs.
 No asset in this repo was made by hand. An LLM on GMI Cloud designed the game and wrote the generation prompts. The soundtrack prompt was rewritten after the first song came out badly. GMI's media models then generated the textures, sprites, soundtrack and voice line in the middle of the build. The only things written by hand are the code and an empty pond (a few colored primitives).
 
